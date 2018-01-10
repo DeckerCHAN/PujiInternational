@@ -1,7 +1,8 @@
 package com.deckerchan.puji.controllers;
 
-import com.deckerchan.puji.entities.export.PingRequest;
-import com.deckerchan.puji.entities.export.PingResponse;
+import com.deckerchan.puji.entities.transfer.inbound.PingRequest;
+import com.deckerchan.puji.entities.transfer.outbound.PingResponse;
+import com.deckerchan.puji.entities.transfer.outbound.Response;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,7 +17,7 @@ public class PingController {
 
 
     @RequestMapping(value = "ping", method = RequestMethod.POST)
-    public PingResponse greeting(@RequestBody PingRequest pingRequest) {
+    public Response greeting(@RequestBody PingRequest pingRequest) {
 
         Calendar cal = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
         long time = cal.getTimeInMillis();

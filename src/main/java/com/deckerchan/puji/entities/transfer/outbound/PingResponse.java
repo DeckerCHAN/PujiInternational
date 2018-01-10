@@ -1,6 +1,6 @@
-package com.deckerchan.puji.entities.export;
+package com.deckerchan.puji.entities.transfer.outbound;
 
-import com.deckerchan.puji.entities.Response;
+import com.deckerchan.puji.entities.transfer.outbound.Response;
 
 public class PingResponse extends Response {
 

@@ -1,10 +1,8 @@
-package com.deckerchan.puji.entities.export;
-
-import com.deckerchan.puji.entities.Request;
+package com.deckerchan.puji.entities.transfer.inbound;
 
 public class PingRequest extends Request {
 
-    public long requestTime;
+    private long requestTime;
 
     public long getRequestTime() {
         return requestTime;

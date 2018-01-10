@@ -28,6 +28,9 @@ targetCompatibility = 1.8
 
 dependencies {
     compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-data-mongodb")
+    compile("org.aspectj:aspectjrt")
     testCompile('org.springframework.boot:spring-boot-starter-test')
     providedCompile('org.springframework.boot:spring-boot-starter-tomcat')
+
 }
